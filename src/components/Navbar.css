@@ -1,5 +1,5 @@
 .mid {
-	background-color: aqua;
+	background-color: lightblue;
 	display: inline-block;
 	width: 63%;
 	margin: auto;
@@ -40,7 +40,7 @@ background-color: deepskyblue;
 border-radius: 5px;
 }
 .right {
-	background-color: aqua;
+	background-color: lightblue;
 display: inline-block;
 width: 8%;
 
@@ -50,7 +50,7 @@ color: #1d19e7;
 }
 
 .right {
-	background-color: aqua;
+	background-color: lightblue;
 display: inline-block;
 width: 8%;
 
@@ -66,7 +66,7 @@ font-weight:bolder;
 }
 
 .left {
-	background-color: aqua;
+	background-color: lightblue;
 display: inline-block;
 width: 17%;
 font-size: 18px;
