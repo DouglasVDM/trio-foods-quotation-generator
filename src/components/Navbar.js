@@ -8,21 +8,18 @@ const Navbar = () => {
       <div className="left">
         <Logo />
         <br />
-        <a href="/">Animal Navbar</a>
+        <a href="/">Home</a>
       </div>
       <div className="mid">
         <ul className="navbar">
           <li>
-            <Link to="/">Dogs</Link>
+            <Link to="/">Sign in</Link>
           </li>
           <li>
-            <Link to="/cats">Cats</Link>
+            <Link to="/search">Search</Link>
           </li>
           <li>
-            <Link to="/sheeps">Sheep</Link>
-          </li>
-          <li>
-            <Link to="/goats">Goats</Link>
+            <Link to="/export-csv">Export CSV</Link>
           </li>
         </ul>
 
