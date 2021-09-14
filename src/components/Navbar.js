@@ -1,6 +1,6 @@
 import React from 'react';
 import { ReactComponent as Logo } from './../images/logoipsum-logo-31.svg';
-import "./Navbar.css"
+// import "./Navbar.css"
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="mid">
         <ul className="navbar">
           <li>
-            <Link to="/">Sign in</Link>
+            <Link to="/sign-in">Sign in</Link>
           </li>
           <li>
             <Link to="/search">Search</Link>
@@ -24,10 +24,6 @@ const Navbar = () => {
         </ul>
 
       </div>
-      <div className="right">
-        <a href="/">Welcome</a>
-      </div>
-
     </header>
   );
 }
