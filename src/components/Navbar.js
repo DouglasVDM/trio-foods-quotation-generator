@@ -4,27 +4,31 @@ import { ReactComponent as Logo } from './../images/logoipsum-logo-31.svg';
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <header className="header">
-      <div className="left">
-        <Logo />
-        <br />
-        <a href="/">Home</a>
-      </div>
-      <div className="mid">
-        <ul className="navbar">
-          <li>
-            <Link to="/sign-in">Sign in</Link>
-          </li>
-          <li>
-            <Link to="/search">Search</Link>
-          </li>
-          <li>
-            <Link to="/export-csv">Export CSV</Link>
-          </li>
-        </ul>
-
-      </div>
-    </header>
+    <div className='App'>
+      <header className="App">
+        <div>
+          <Logo />
+          <br />
+          <a href="/">Home</a>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <Link to="/sign-in">Sign in</Link>
+            </li>
+            <li>
+              <Link to="/search">Search</Link>
+            </li>
+            <li>
+              <Link to="/search">DataTable</Link>
+            </li>
+            <li>
+              <Link to="/export-csv">Export CSV</Link>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
   );
 }
 export default Navbar;
