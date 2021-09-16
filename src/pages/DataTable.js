@@ -12,16 +12,18 @@ function DataTable() {
   const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
-    fetch("")
+    fetch("https://trio-foods-api.herokuapp.com")
       .then((data) => data.json())
-    .then((data)=> setTableData(data))
+      .then((data) => setTableData(data))
   }, [])
+  console.log(tableData)
   return (
     <div style={{height: 700, width: '100%'}}>
       <DataGrid
         rows={tableData}
         columns={columns}
         pageSize={10}
+        rowsPerPageOptions={[10]}
         checkboxSelection
       />
     </div>

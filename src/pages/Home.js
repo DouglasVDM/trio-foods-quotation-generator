@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import DeleteIcon from '@material-ui/icons/Delete';
 import SaveIcon from '@material-ui/icons/Save';
 import { orange } from '@material-ui/core/colors';
+import 'fontsource-roboto';
+import { Typography } from '@material-ui/core';
 import {
   ButtonGroup,
   Button,
@@ -62,6 +64,12 @@ function Home() {
     <ThemeProvider theme={theme}>
       <div className='App'>
         <header className='App-header'>
+          <Typography variant='h2' component='div'>
+            Welcome to MUI
+          </Typography>
+          <Typography variant='subtitle1'>
+            Learn how to use Material UI
+          </Typography>
           <ButtonStyled />
           <TextField
             variant='filled'
